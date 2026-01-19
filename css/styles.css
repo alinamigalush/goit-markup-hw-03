@@ -1,9 +1,14 @@
 /* ===== BASE ===== */
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
   color: #434455;
   background-color: #ffffff;
-  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, p {
@@ -16,11 +21,6 @@ ul {
   padding: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -29,52 +29,42 @@ a {
 button {
   font-family: inherit;
   cursor: pointer;
-  border: none;
-  background: none;
-}
-
-/* ===== CONTAINER ===== */
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* ===== HEADER ===== */
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
-}
-
-.nav {
-  display: block;
+  padding: 24px 0;
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.2;
   text-transform: uppercase;
-  color: #4d5ae5; /* Web */
+  letter-spacing: 0.03em;
 }
 
-.logo-accent {
-  color: #2e2f42; /* Studio */
+.logo .logo-accent {
+  color: #4d5ae5; /* Web синій */
 }
 
 .nav-list {
-  margin-top: 10px;
+  margin-left: 76px;
+  padding: 0;
 }
 
 .nav-link {
-  display: inline-block;
-  margin-right: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -82,16 +72,16 @@ button {
   color: #404bbf;
 }
 
-.address-list {
-  margin-top: 10px;
+.address {
+  font-style: normal;
 }
 
 .address-link {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  font-style: normal;
 }
 
 .address-link:hover,
@@ -99,20 +89,16 @@ button {
   color: #404bbf;
 }
 
-address {
-  font-style: normal;
-}
-
 /* ===== HERO ===== */
 .hero {
   background-color: #2e2f42; /* темний фон */
+  padding: 188px 0 160px;
   text-align: center;
-  padding: 188px 15px 120px; 
 }
 
 .hero-title {
-  font-size: 56px;
   font-weight: 700;
+  font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -121,15 +107,15 @@ address {
 }
 
 .hero-button {
-  min-width: 169px;
-  height: 56px;
   background-color: #4d5ae5;
   color: #ffffff;
+  border: none;
+  padding: 18px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08em; /* точне значення для кнопки */
-  border-radius: 4px;
+  letter-spacing: 0.04em; /* виправлено */
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -139,11 +125,12 @@ address {
 
 /* ===== FEATURES ===== */
 .features {
-  padding: 120px 15px;
+  padding: 120px 0;
 }
 
 .features-title {
   text-align: center;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
@@ -151,58 +138,58 @@ address {
 }
 
 .features-list {
-  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .features-item {
-  margin-bottom: 48px;
+  margin-bottom: 48px; /* відстань між картками */
 }
 
 .features-subtitle {
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: left;
+  text-align: left; /* виправлено */
   margin-bottom: 8px;
 }
 
 .features-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: left;
+  text-align: left; /* виправлено */
 }
 
 /* ===== TEAM ===== */
 .team {
   background-color: #f4f4fd; /* світлий фон секції */
-  padding: 120px 15px;
+  padding: 120px 0;
 }
 
 .team-title {
   text-align: center;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
   margin-bottom: 72px;
 }
 
-.team-list {
-  display: block;
-}
-
 .team-item {
   background-color: #ffffff; /* білий фон картки */
+  padding: 32px 16px 32px;
+  margin-bottom: 32px;
   text-align: center;
-  margin-bottom: 48px;
 }
 
 .team-name {
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -210,69 +197,69 @@ address {
 }
 
 .team-position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
   margin-top: 8px;
 }
 
 /* ===== PORTFOLIO ===== */
 .portfolio {
-  padding: 120px 15px;
+  padding: 120px 0;
 }
 
 .portfolio-title {
   text-align: center;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
   margin-bottom: 72px;
 }
 
-.portfolio-list {
-  display: block;
-}
-
 .portfolio-item {
-  border: 1px solid #e7e9fc;
+  background-color: #ffffff; /* фон картки */
+  padding: 16px;
   margin-bottom: 48px;
 }
 
 .portfolio-subtitle {
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: left;
-  margin: 16px;
-  margin-top: 32px;
+  text-align: left; /* виправлено */
+  margin-top: 16px;
 }
 
 .portfolio-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: left;
-  margin: 0 16px 32px;
+  text-align: left; /* виправлено */
+  margin-top: 8px;
 }
 
 /* ===== FOOTER ===== */
 .footer {
-  background-color: #2e2f42; /* темний фон футера */
-  padding: 100px 15px;
+  background-color: #2e2f42; /* темний фон */
+  padding: 100px 0;
   text-align: center;
 }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
   font-weight: 700;
-  text-transform: uppercase;
+  font-size: 18px;
   line-height: 1.2;
+  text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: #4d5ae5; /* Web */
+  color: #4d5ae5; /* Web синій */
 }
 
 .footer-logo .logo-accent {
@@ -280,11 +267,13 @@ address {
 }
 
 .footer-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
   max-width: 264px;
-  margin: 16px auto 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-
