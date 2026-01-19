@@ -5,10 +5,7 @@ body {
   background-color: #ffffff;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -46,8 +43,8 @@ button {
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 72px;
 }
 
@@ -85,10 +82,6 @@ button {
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
-}
-
-.address {
-  font-style: normal;
 }
 
 .address-list {
