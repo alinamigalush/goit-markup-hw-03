@@ -1,14 +1,11 @@
-/* ====== Reset base ====== */
+/* ===== RESET ===== */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -27,22 +24,41 @@ a {
   text-decoration: none;
 }
 
-/* ====== Container ====== */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ===== UTILS ===== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===== CONTAINER ===== */
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* ====== Header ====== */
+/* ===== HEADER ===== */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header .container {
+.header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  height: 72px;
 }
 
 .nav {
@@ -50,17 +66,10 @@ a {
   align-items: center;
 }
 
-.nav-list {
-  display: flex;
-  gap: 40px;
-  margin-left: 76px;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -70,7 +79,15 @@ a {
   color: #2e2f42;
 }
 
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+}
+
 .nav-link {
+  position: relative;
+  padding: 24px 0;
   font-weight: 500;
   line-height: 1.5;
   color: #2e2f42;
@@ -79,6 +96,21 @@ a {
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
+}
+
+.nav-link.current {
+  color: #404bbf;
+}
+
+.nav-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .address {
@@ -100,7 +132,7 @@ a {
   color: #404bbf;
 }
 
-/* ====== Hero ====== */
+/* ===== HERO ===== */
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -111,19 +143,22 @@ a {
   max-width: 496px;
   margin: 0 auto 48px;
   font-size: 56px;
+  font-weight: 700;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 .hero-button {
+  min-width: 169px;
+  height: 56px;
   background-color: #4d5ae5;
-  color: #ffffff;
   border: none;
-  padding: 16px 32px;
   border-radius: 4px;
+  color: #ffffff;
   font-weight: 500;
-  font-family: inherit; /* кнопка успадковує Roboto */
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -131,17 +166,9 @@ a {
   background-color: #404bbf;
 }
 
-/* ====== Features ====== */
+/* ===== FEATURES ===== */
 .features {
   padding: 120px 0;
-}
-
-.features-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.11;
-  color: #2e2f42;
-  margin-bottom: 72px;
 }
 
 .features-list {
@@ -154,18 +181,20 @@ a {
 }
 
 .features-subtitle {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 .features-text {
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-/* ====== Team ====== */
+/* ===== TEAM ===== */
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -173,10 +202,10 @@ a {
 
 .team-title {
   text-align: center;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
-  margin-bottom: 72px;
 }
 
 .team-list {
@@ -189,6 +218,10 @@ a {
   text-align: center;
   border-radius: 0 0 4px 4px;
   padding-bottom: 32px;
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -203,17 +236,17 @@ a {
   line-height: 1.5;
 }
 
-/* ====== Portfolio ====== */
+/* ===== PORTFOLIO ===== */
 .portfolio {
   padding: 120px 0;
 }
 
 .portfolio-title {
   text-align: center;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
-  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -225,27 +258,40 @@ a {
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-content {
+  padding: 32px 16px;
 }
 
 .portfolio-subtitle {
-  margin: 32px 16px 8px;
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
 }
 
 .portfolio-text {
-  margin: 0 16px 32px;
   line-height: 1.5;
 }
 
-/* ====== Footer ====== */
+/* ===== FOOTER ===== */
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -259,15 +305,6 @@ a {
 
 .footer-text {
   max-width: 264px;
-  margin-top: 16px;
   line-height: 1.5;
   color: #f4f4fd;
 }
-
-/* ====== Button inheritance fix for other buttons (якщо додаси ще) ====== */
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
-
