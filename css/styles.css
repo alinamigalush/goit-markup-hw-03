@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  line-height: 1.5; /* додаємо ритм тексту */
+  line-height: 1.5; /* додано для єдиного ритму */
 }
 
 h1, h2, h3, p {
@@ -23,7 +23,6 @@ img {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 button {
@@ -31,9 +30,28 @@ button {
   cursor: pointer;
 }
 
+/* ===== CONTAINER ===== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* ===== HEADER ===== */
 .header {
   border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -42,18 +60,25 @@ button {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5; /* Web синій */
+  color: #2e2f42; /* виправлено: Web синій, Studio темний */
 }
 
 .logo-accent {
-  color: #2e2f42; /* Studio темний */
+  color: #4d5ae5; /* виправлено */
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .nav-link {
-  font-size: 16px;
+  padding: 24px 0;
   font-weight: 500;
+  font-size: 16px; /* додано */
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; /* додано */
   color: #2e2f42;
 }
 
@@ -62,10 +87,15 @@ button {
   color: #404bbf;
 }
 
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
 .address-link {
-  font-style: normal; /* прибираємо стандартний курсив */
   line-height: 1.5;
   color: #434455;
+  font-style: normal; /* додано для скасування курсиву */
 }
 
 .address-link:hover,
@@ -74,22 +104,32 @@ button {
 }
 
 /* ===== HERO ===== */
+.hero {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+}
+
 .hero-title {
+  max-width: 496px;
+  margin: 0 auto 48px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  text-align: center;
 }
 
 .hero-button {
-  font-weight: 500;
-  color: #ffffff;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
+  min-width: 169px;
+  height: 56px;
   background-color: #4d5ae5;
   border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.5; /* додано */
+  letter-spacing: 0.02em; /* додано */
 }
 
 .hero-button:hover,
@@ -98,14 +138,29 @@ button {
 }
 
 /* ===== FEATURES ===== */
+.features {
+  padding: 120px 0;
+}
+
 .features-title {
+  margin-bottom: 72px;
+  text-align: center;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
-  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -116,62 +171,112 @@ button {
 .features-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 /* ===== TEAM ===== */
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
 .team-title {
+  margin-bottom: 72px;
+  text-align: center;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: #ffffff;
   text-align: center;
+  border-radius: 0 0 4px 4px;
+  padding-bottom: 32px;
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
+  margin-top: 32px;
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
 }
 
 .team-position {
+  margin-top: 8px;
   line-height: 1.5;
-  color: #434455;
 }
 
 /* ===== PORTFOLIO ===== */
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-title {
+  margin-bottom: 72px;
+  text-align: center;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
-  text-align: center;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-subtitle {
+  margin: 32px 16px 8px;
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
+  line-height: 1.2; /* додано */
+  letter-spacing: 0.02em; /* додано */
 }
 
 .portfolio-text {
+  margin: 0 16px 32px;
   line-height: 1.5;
-  color: #434455;
+  letter-spacing: 0.02em; /* додано */
 }
 
 /* ===== FOOTER ===== */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #4d5ae5; /* Web синій */
+  color: #2e2f42; /* виправлено: Web синій, Studio темний */
 }
 
 .footer-logo .logo-accent {
-  color: #f4f4fd; /* Studio світлий */
+  color: #f4f4fd; /* виправлено */
 }
 
 .footer-text {
+  max-width: 264px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
+  letter-spacing: 0.02em; /* додано */
 }
