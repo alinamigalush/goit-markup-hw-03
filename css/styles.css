@@ -1,88 +1,77 @@
-/* ==========================
-   Global Reset & Base Styles
-========================== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
+/* BASE STYLES */
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
-  color: #0f0f0f;
-  background-color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
+  color: #434455;
+  background-color: #ffffff;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
 }
 
-p {
+h1, h2, h3, p {
   margin: 0;
 }
 
 ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/* ==========================
-   Container
-========================== */
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CONTAINER */
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* ==========================
-   Header
-========================== */
+/* HEADER */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
 }
 
 .logo {
-  text-decoration: none;
-  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-.logo-accent {
-  color: #556fff;
-}
+.logo-accent { color: #4d5ae5; }
+.logo-text { color: #2e2f42; }
 
 .nav-list {
   display: flex;
-  margin-left: 76px;
   gap: 40px;
+  margin-left: 76px;
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #0f0f0f;
+  font-size: 16px;
+  color: #2e2f42;
   padding: 24px 0;
-  font-style: normal;
-  transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: #556fff;
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
 }
 
 .address-list {
@@ -91,183 +80,181 @@ ul {
 }
 
 .address-link {
-  text-decoration: none;
-  color: #556fff;
-  padding: 24px 0;
+  font-size: 16px;
+  color: #ffffff; /* світлий колір контактів */
   font-style: normal;
-  transition: color 0.3s;
 }
 
-.address-link:hover {
-  color: #0f0f0f;
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
 }
 
-/* ==========================
-   Hero Section
-========================== */
+/* HERO */
 .hero {
+  background-color: #2e2f42;
+  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: center;
 }
 
 .hero-title {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: #ffffff;
   max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 48px auto;
 }
 
 .hero-button {
-  margin-top: 48px;
-  padding: 14px 28px;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 500;
+  background-color: #4d5ae5;
+  color: #fff;
   border: none;
+  cursor: pointer;
+  padding: 14px 32px;
   border-radius: 4px;
   letter-spacing: 0.03em;
-  background-color: #556fff;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.hero-button:hover {
-  background-color: #334ac0;
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
 }
 
-/* ==========================
-   Features Section
-========================== */
+/* SECTION */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+/* FEATURES */
 .features-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-
-.features-list li {
-  flex: 0 0 264px;
-  text-align: left;
+  max-width: 1158px;
+  margin: 0 auto;
 }
 
 .features-subtitle {
   font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-weight: 500;
+  color: #2e2f42; /* повернули колір */
+  text-align: left;
+  margin-bottom: 16px;
 }
 
 .features-text {
   font-size: 16px;
-  line-height: 1.5;
-}
-
-/* ==========================
-   Team Section
-========================== */
-.team {
-  background-color: #f9f9ff;
-}
-
-.section-title {
-  font-size: 32px;
-  font-weight: 700;
+  color: #434455; /* повернули колір */
   text-align: left;
-  margin-bottom: 72px;
+}
+
+/* TEAM */
+.team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
+  justify-content: space-between;
 }
 
 .team-item {
-  flex: 0 0 264px;
   background-color: #fff;
+  flex: 1 1 264px;
   border-radius: 0 0 4px 4px;
   overflow: hidden;
 }
 
 .team-item-content {
   padding: 32px 16px;
+  text-align: left;
 }
 
 .team-name {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .team-position {
   font-size: 16px;
-  color: #0f0f0f;
+  color: #434455;
 }
 
-/* ==========================
-   Portfolio Section
-========================== */
+/* PORTFOLIO */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px; /* 48px між рядками, 24px між колонками */
+  justify-content: space-between;
 }
 
 .portfolio-item {
-  flex: 0 0 360px;
+  flex: 1 1 360px;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-item-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  border-top: 0;
+  border-top: none;
   text-align: left;
 }
 
 .portfolio-subtitle {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .portfolio-text {
   font-size: 16px;
+  color: #434455;
 }
 
-/* ==========================
-   Footer
-========================== */
+/* FOOTER */
 .footer {
+  background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  color: #f4f4fd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .footer-logo {
-  display: flex;
-  gap: 16px;
-  text-decoration: none;
-  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-.footer-logo .logo-accent {
-  color: #556fff;
-}
+.footer-logo-text { color: #f4f4fd; }
+.footer-text { color: #f4f4fd; max-width: 264px; }
 
-.footer-logo-text {
-  color: #0f0f0f;
-}
-
-.footer-text {
-  max-width: 264px;
-  margin-top: 16px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* ==========================
-   Utility Class
-========================== */
+/* ACCESSIBILITY */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -280,6 +267,7 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 
 
 
