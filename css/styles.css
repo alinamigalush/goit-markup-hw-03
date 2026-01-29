@@ -20,13 +20,35 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
   text-decoration: none;
 }
 
+/* CONTAINER */
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* HEADER */
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list,
+.address-list {
+  display: flex;
+  gap: 32px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -73,6 +95,7 @@ a {
 .hero {
   background-color: #2e2f42;
   text-align: center;
+  padding: 120px 0;
 }
 
 .hero-title {
@@ -80,6 +103,7 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 32px;
 }
 
 .hero-button {
@@ -107,15 +131,31 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 60px;
 }
 
 /* FEATURES */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.features-list li {
+  flex: 1 1 calc((100% - 90px)/4);
+  background-color: #f4f4fd;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .features-subtitle {
   font-size: 20px;
-  line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 12px;
 }
 
 .features-text {
@@ -128,55 +168,86 @@ a {
 /* TEAM */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .team-item {
+  flex: 1 1 calc((100% - 90px)/4);
+  max-width: 264px;
   background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .team-name {
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: center;
+  margin-top: 16px;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+  margin-top: 8px;
 }
 
 /* PORTFOLIO */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.portfolio-list li {
+  flex: 1 1 calc((100% - 90px)/3);
+  max-width: 360px;
+  text-align: center;
+}
+
 .portfolio-subtitle {
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 12px;
 }
 
 .portfolio-text {
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 4px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
 }
 
 /* FOOTER */
 .footer {
   background-color: #2e2f42;
-  padding: 32px;
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -186,9 +257,10 @@ a {
 
 .footer-text {
   color: #f4f4fd;
-  letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 12px;
 }
 
 /* ACCESSIBILITY */
