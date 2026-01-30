@@ -121,11 +121,12 @@ a {
   font-size: 56px;
   line-height: 1.07;
   color: #ffffff;
-  max-width: 496px;
+  max-width: none; /* або 1000px, щоб не обмежувало */
   margin: 0 0 48px 0;
-  letter-spacing: 0.02em; /* поправлено для відповідності макету */
+  letter-spacing: 0.02em;
   text-align: center;
 }
+
 
 .hero-button {
   width: 169px;
@@ -309,6 +310,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
