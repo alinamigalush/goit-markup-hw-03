@@ -29,11 +29,12 @@ a {
 /* CONTAINER */
 .container {
   max-width: 1158px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /* HEADER */
 .header {
@@ -107,17 +108,14 @@ a {
 }
 
 .hero-button {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #4d5ae5;
-  color: #fff;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   border: none;
-  cursor: pointer;
-  padding: 14px 32px;
   border-radius: 4px;
-  letter-spacing: 0.03em;
+  margin: 0 auto;
 }
+
 
 .hero-button:hover,
 .hero-button:focus {
@@ -142,10 +140,10 @@ a {
 .features-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
-  flex-wrap: nowrap;
-  max-width: 1158px;
-  margin: 0 auto;
+}
+
+.features-list li {
+  width: 264px;
 }
 
 .features-subtitle {
@@ -260,7 +258,6 @@ a {
   overflow: hidden;
 }
 
-
 /* ACCESSIBILITY */
 .visually-hidden {
   position: absolute;
@@ -274,6 +271,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 
 
 
