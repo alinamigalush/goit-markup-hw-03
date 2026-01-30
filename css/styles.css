@@ -44,6 +44,7 @@ a {
   display: flex;
   align-items: center;
   padding: 0;
+  text-align: center;
 }
 
 .logo {
@@ -281,6 +282,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
