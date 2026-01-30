@@ -123,9 +123,9 @@ a {
   color: #ffffff;
   max-width: 496px;
   margin: 0 0 48px 0;
-  letter-spacing: 0.02em; /* виправлено */
+  letter-spacing: 0.02em; /* поправлено для відповідності макету */
+  text-align: center;
 }
-
 
 .hero-button {
   width: 169px;
@@ -309,6 +309,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
