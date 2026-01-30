@@ -231,50 +231,40 @@ a {
 }
 
 /* FOOTER */
-
 .footer {
   background: #2e2f42;
   padding: 100px 0;
 }
 
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.footer-logo-text {
+  color: #f4f4fd;
+}
+
 .footer-text {
+  margin-top: 16px;
   max-width: 264px;
   color: #f4f4fd;
-  margin-top: 16px;
 }
 
-/* HIDDEN TITLE */
-
+/* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* ACCESSIBILITY */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
   border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  clip-path: inset(100%);
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
 }
-
-
-
-
-
-
-
