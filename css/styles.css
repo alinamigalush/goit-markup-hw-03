@@ -119,7 +119,7 @@ a {
   color: #ffffff;
   max-width: 496px;
   margin: 0 0 48px 0;  /* центрування через flex, margin auto не потрібен */
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .hero-button {
@@ -132,7 +132,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   border: none;
   cursor: pointer;
 }
@@ -168,8 +168,11 @@ a {
 }
 
 .features-item {
-  flex: 0 0 264px; /* фіксована ширина для чотириколонки */
+  flex: 0 0 264px;
+  max-width: 264px;
 }
+
+
 
 .features-subtitle {
   font-size: 20px;
@@ -301,6 +304,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
