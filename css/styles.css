@@ -251,18 +251,21 @@ a {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  display: inline-block;
 }
 
-.footer-logo span {
-  display: inline; /* WebStudio без пробілів */
+.footer-logo .logo-accent {
+  color: #4d5ae5; /* Web */
+}
+
+.footer-logo .logo-text {
+  color: #f4f4fd; /* Studio */
 }
 
 .footer-text {
   margin-top: 16px;
   max-width: 264px;
   color: #f4f4fd;
-  letter-spacing: 0.02em;
 }
 
 /* VISUALLY HIDDEN */
@@ -277,6 +280,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
