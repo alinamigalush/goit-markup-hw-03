@@ -149,11 +149,6 @@ a {
 }
 
 /* FEATURES */
-
-.features-text:nth-child(2) { content: "We provide tailored solutions that help your business grow."; }
-.features-text:nth-child(4) { content: "We deliver projects on time while maintaining top quality."; }
-.features-text:nth-child(6) { content: "We research every detail and monitor each stage carefully."; }
-.features-text:nth-child(8) { content: "We implement the latest technologies to ensure efficiency and scalability."; }
 .features-list {
   display: flex;
   gap: 24px;
@@ -282,6 +277,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
