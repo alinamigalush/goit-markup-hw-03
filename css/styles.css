@@ -60,7 +60,7 @@ a {
 .nav-list {
   display: flex;
   gap: 76px;
-  margin-left: 76px; ✅
+  margin-left: 76px;
 }
 
 .nav-link {
@@ -99,8 +99,7 @@ a {
 .hero {
   background-color: #2e2f42;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+   padding: 200px 0;
 }
 
 .hero-title {
@@ -280,6 +279,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
