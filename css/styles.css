@@ -43,7 +43,6 @@ a {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
 }
@@ -60,9 +59,10 @@ a {
 
 .nav-list {
   display: flex;
-  gap: 76px; /* точний відступ між логотипом і навігацією */
-  margin-left: 0;
+  gap: 76px; /* точний відступ між пунктами меню */
+  margin-left: 40px; /* відступ від логотипу, щоб все в один рядок */
 }
+
 
 .nav-link {
   font-size: 16px;
@@ -188,7 +188,7 @@ a {
 
 .team-item {
   background-color: #fff;
-  flex: 1 1 264px;
+   flex: 0 0 264px;
   border-radius: 0 0 4px 4px;
   overflow: hidden;
 }
@@ -215,7 +215,7 @@ a {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 48px;               /* Виправлено по ментору */
+  gap: 48px 24px;              /* Виправлено по ментору */
 }
 
 .portfolio-item {
@@ -282,6 +282,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
