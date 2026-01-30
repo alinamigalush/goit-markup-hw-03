@@ -103,9 +103,13 @@ a {
   align-items: center;  /* по центру горизонтально */
   justify-content: center; /* по центру вертикально */
   text-align: center;
-  padding-top: 188px; 
+}
+
+.hero.section {
+  padding-top: 188px;
   padding-bottom: 188px;
 }
+
 
 .hero .container {
   display: flex;
@@ -118,9 +122,10 @@ a {
   line-height: 1.07;
   color: #ffffff;
   max-width: 496px;
-  margin: 0 0 48px 0;  /* центрування через flex, margin auto не потрібен */
-  letter-spacing: 0.04em;
+  margin: 0 0 48px 0;
+  letter-spacing: 0.02em; /* виправлено */
 }
+
 
 .hero-button {
   width: 169px;
@@ -304,6 +309,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
