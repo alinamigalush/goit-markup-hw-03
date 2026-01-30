@@ -59,10 +59,9 @@ a {
 
 .nav-list {
   display: flex;
-  gap: 76px; /* точний відступ між пунктами меню */
-  margin-left: 40px; /* відступ від логотипу, щоб все в один рядок */
+  gap: 76px;
+  margin-left: 76px; ✅
 }
-
 
 .nav-link {
   font-size: 16px;
@@ -160,12 +159,14 @@ a {
   font-weight: 500;
   color: #2e2f42;
   text-align: left;
-  margin-bottom: 8px;       /* Виправлено по ментору */
+  margin-bottom: 8px; /* Виправлено по ментору */
+  letter-spacing: 0.02em;
 }
 
 .features-text {
   font-size: 16px;
   color: #434455;
+  letter-spacing: 0.02em; 
 }
 
 /* TEAM */
@@ -198,6 +199,7 @@ a {
   font-weight: 500;
   color: #2e2f42;
   margin-bottom: 8px;
+  letter-spacing: 0.02em;
 }
 
 .team-position {
@@ -231,6 +233,7 @@ a {
   font-weight: 500;
   color: #2e2f42;
   margin-bottom: 8px;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-text {
@@ -277,6 +280,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
