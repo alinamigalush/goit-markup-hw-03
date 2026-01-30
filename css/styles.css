@@ -60,8 +60,8 @@ a {
 
 .nav-list {
   display: flex;
-  gap: 40px;
-  margin-left: 76px;
+  gap: 76px; /* точний відступ між логотипом і навігацією */
+  margin-left: 0;
 }
 
 .nav-link {
@@ -80,13 +80,14 @@ a {
 .address-list {
   display: flex;
   gap: 40px;
+  margin-left: auto; /* контакти праворуч */
 }
 
 .address-link {
   font-size: 16px;
   color: #434455;
   font-style: normal;
-  font-weight: 500;        /* Виправлено по ментору */
+  font-weight: 400;        /* Виправлено по ментору */
   letter-spacing: 0.02em;  /* Виправлено по ментору */
 }
 
@@ -109,6 +110,7 @@ a {
   color: #ffffff;
   max-width: 496px;
   margin: 0 auto 48px auto;
+   letter-spacing: 0.04em; 
 }
 
 .hero-button {
@@ -147,14 +149,16 @@ a {
 }
 
 /* FEATURES */
+
+.features-text:nth-child(2) { content: "We provide tailored solutions that help your business grow."; }
+.features-text:nth-child(4) { content: "We deliver projects on time while maintaining top quality."; }
+.features-text:nth-child(6) { content: "We research every detail and monitor each stage carefully."; }
+.features-text:nth-child(8) { content: "We implement the latest technologies to ensure efficiency and scalability."; }
 .features-list {
   display: flex;
   gap: 24px;
 }
 
-.features-list li {
-  width: 264px;
-}
 
 .features-subtitle {
   font-size: 20px;
@@ -204,13 +208,14 @@ a {
 .team-position {
   font-size: 16px;
   color: #434455;
+  letter-spacing: 0.02em;
 }
 
 /* PORTFOLIO */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;                /* Виправлено по ментору */
+  gap: 24px 48px;               /* Виправлено по ментору */
 }
 
 .portfolio-item {
@@ -236,6 +241,7 @@ a {
 .portfolio-text {
   font-size: 16px;
   color: #434455;
+  letter-spacing: 0.02em;
 }
 
 /* FOOTER */
@@ -251,6 +257,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+   display: inline;
 }
 
 .footer-logo-text {
@@ -275,6 +282,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
