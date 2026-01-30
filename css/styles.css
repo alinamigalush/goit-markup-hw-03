@@ -255,11 +255,11 @@ a {
 }
 
 .footer-logo .logo-accent {
-  color: #4d5ae5; /* Web */
+  color: #4d5ae5; /* Web синій */
 }
 
 .footer-logo .logo-text {
-  color: #f4f4fd; /* Studio */
+  color: #f4f4fd; /* Studio світлий */
 }
 
 .footer-text {
@@ -267,6 +267,7 @@ a {
   max-width: 264px;
   color: #f4f4fd;
 }
+
 
 /* VISUALLY HIDDEN */
 .visually-hidden {
@@ -280,6 +281,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
