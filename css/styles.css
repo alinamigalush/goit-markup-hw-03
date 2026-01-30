@@ -35,7 +35,6 @@ a {
   margin-right: auto;
 }
 
-
 /* HEADER */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -67,8 +66,8 @@ a {
   font-size: 16px;
   color: #2e2f42;
   padding: 24px 0;
-  font-weight: 500;        /* Виправлено по ментору */
-  letter-spacing: 0.02em;  /* Виправлено по ментору */
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
@@ -79,15 +78,15 @@ a {
 .address-list {
   display: flex;
   gap: 40px;
-  margin-left: auto; /* контакти праворуч */
+  margin-left: auto;
 }
 
 .address-link {
   font-size: 16px;
   color: #434455;
   font-style: normal;
-  font-weight: 400;        /* Виправлено по ментору */
-  letter-spacing: 0.02em;  /* Виправлено по ментору */
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .address-link:hover,
@@ -99,7 +98,7 @@ a {
 .hero {
   background-color: #2e2f42;
   text-align: center;
-   padding: 200px 0;
+  padding: 200px 0; /* один padding */
 }
 
 .hero-title {
@@ -108,7 +107,7 @@ a {
   color: #ffffff;
   max-width: 496px;
   margin: 0 auto 48px auto;
-   letter-spacing: 0.04em; 
+  letter-spacing: 0.04em;
 }
 
 .hero-button {
@@ -121,10 +120,9 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.04em;  /* Виправлено по ментору */
+  letter-spacing: 0.04em;
   border: none;
   cursor: pointer;
-  opacity: 1;
 }
 
 .hero-button:hover,
@@ -144,6 +142,7 @@ a {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
+  letter-spacing: 0.02em;
 }
 
 /* FEATURES */
@@ -152,20 +151,19 @@ a {
   gap: 24px;
 }
 
-
 .features-subtitle {
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
   text-align: left;
-  margin-bottom: 8px; /* Виправлено по ментору */
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
 }
 
 .features-text {
   font-size: 16px;
   color: #434455;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
 }
 
 /* TEAM */
@@ -178,19 +176,19 @@ a {
 .team-list {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .team-item {
   background-color: #fff;
-   flex: 0 0 264px;
+  flex: 0 0 264px; /* фіксована ширина */
   border-radius: 0 0 4px 4px;
   overflow: hidden;
 }
 
 .team-item-content {
   padding: 32px 16px;
-  text-align: center;        /* Виправлено по ментору */
+  text-align: center;
 }
 
 .team-name {
@@ -211,11 +209,11 @@ a {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;              /* Виправлено по ментору */
+  gap: 48px 24px; /* вертикаль 48px, горизонталь 24px */
 }
 
 .portfolio-item {
-  width: 360px;              /* Виправлено по ментору */
+  width: 360px;
   display: flex;
   flex-direction: column;
 }
@@ -254,17 +252,17 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-   display: inline;
 }
 
-.footer-logo-text {
-  color: #f4f4fd;
+.footer-logo span {
+  display: inline; /* WebStudio без пробілів */
 }
 
 .footer-text {
   margin-top: 16px;
   max-width: 264px;
   color: #f4f4fd;
+  letter-spacing: 0.02em;
 }
 
 /* VISUALLY HIDDEN */
@@ -279,9 +277,6 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
-
-
-
 
 
 
