@@ -59,7 +59,7 @@ a {
 
 .nav-list {
   display: flex;
-  gap: 76px;
+  gap: 40px;
   margin-left: 76px;
 }
 
@@ -99,8 +99,10 @@ a {
 .hero {
   background-color: #2e2f42;
   text-align: center;
-  padding: 200px 0; /* один padding */
+  padding-top: 188px;  /* замість 200px */
+  padding-bottom: 188px;
 }
+
 
 .hero-title {
   font-size: 56px;
@@ -108,7 +110,7 @@ a {
   color: #ffffff;
   max-width: 496px;
   margin: 0 auto 48px auto;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .hero-button {
@@ -282,6 +284,7 @@ a {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
 
 
 
